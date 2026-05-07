@@ -1,0 +1,5 @@
+
+ALTER TABLE public.grid_readings REPLICA IDENTITY FULL;
+ALTER PUBLICATION supabase_realtime ADD TABLE public.grid_readings;
+CREATE EXTENSION IF NOT EXISTS pg_cron;
+CREATE EXTENSION IF NOT EXISTS pg_net;
